@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <html lang="en"></html>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <style>
+        body {
+            background-color: #f7f7f7; /* light gray background */
+        }
+        
+        .glass-effect {
+            background-color: rgba(255, 255, 255, 0.8); /* white background with 80% opacity */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+        }
+        
+        .bold-label {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="diwali-top-section">
-        <h1 class="diwali-top-section-heading">
-            Celebrate Diwali with your friends
-        </h1>
-    </div>
-    <div class="diwali-bottom-section">
-        <div class="d-flex flex-row justify-content-center">
-            <div class="diwali-card-item">
-                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png" class="diwali-card-image" />
-                <h1 class="diwali-card-name">Diwali Air Balloon</h1>
-                <p class="diwali-card-price">Rs 369</p>
-            </div>
-
-            <div class="diwali-card-item">
-                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png" class="diwali-card-image" />
-                <h1 class="diwali-card-name">Diwali - Lamp</h1>
-                <p class="diwali-card-price">Rs 50</p>
-            </div>
-        </div>
-        <div class="d-flex flex-row justify-content-center">
-            <div class="diwali-card-item">
-                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png" class="diwali-card-image" />
-                <h1 class="diwali-card-name">Sparklers</h1>
-                <p class="diwali-card-price">Rs 100</p>
-            </div>
-
-            <div class="diwali-card-item">
-                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png" class="diwali-card-image" />
-                <h1 class="diwali-card-name">Fire Cracker</h1>
-                <p class="diwali-card-price">Rs 560</p>
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-6 text-center">
+                <div class="card detailed-view-card-container glass-effect">
+                    <img src="master chef.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="detailed-view-heading">KIET Master Chef Contest</h1>
+                        <p class="detailed-view-card-description">
+                            <span class="bold-label">Event :</span> Home Cooking & Presentation<br>
+                            <span class="bold-label">Date & Time :</span> 14th September 2024, 10:00 AM - 12:00 PM<br>
+                            <span class="bold-label">Venue :</span> Bossmol<br>
+                            <span class="bold-label">Coordinators :</span> Akshay & Bhavya<br>
+                            <span class="bold-label">Highlights :</span><br>
+                            <ul>
+                                <li>Showcase your culinary skills in a fun and competitive environment.</li>
+                                <li>Cook and present your best home-cooked dishes.</li>
+                                <li>Judging criteria: Taste, Presentation, and Creativity.</li>
+                                <li>Prizes for the top chefs!</li>
+                            </ul>
+                            <a href="https://forms.gle/ueN7f4vEf2SzeB7b7" target="_blank" class="btn btn-primary">Register Now</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="btn btn-primary">View More</button>
     </div>
 </body>
 
